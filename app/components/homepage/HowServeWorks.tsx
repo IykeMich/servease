@@ -71,7 +71,7 @@ export default function HowServeWorks() {
 
 const guidelines: {id:number; image:string; title:string; description:string}[] = [
     {id:1, image: "/assets/homepage/guidelines/guideline1.svg", title: "Select Your Service", description: "Browse and pick from a range of trusted home services — cleaning, repairs, errands...."},
-    {id:2, image: "/assets/homepage/guidelines/guideline2.svg", title: "SChoose time & location", description: "Tell us when and where you need help — we'll match you with the right professional."},
+    {id:2, image: "/assets/homepage/guidelines/guideline2.svg", title: "Choose time & location", description: "Tell us when and where you need help — we'll match you with the right professional."},
     {id:3, image: "/assets/homepage/guidelines/guideline3.svg", title: "Confirm & Pay", description: "Secure your booking in seconds with easy online payment and instant confirmation."},
     {id:4, image: "/assets/homepage/guidelines/guideline4.svg", title: "Relax we'll take care of it", description: "Sit back and enjoy — our vetted pros will handle the job with care and efficiency."},
     {id:5, image: "/assets/homepage/guidelines/guideline5.svg", title: "Track your service", description: "Know exactly what's happening at every step of your service order"},
