@@ -75,7 +75,25 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		},
+		keyframes: {
+		"fade-in": {
+			"0%": { opacity: "0", transform: "translateY(20px)" },
+			"100%": { opacity: "1", transform: "translateY(0)" },
+		},
+		"typing": {
+			"from": { width: "0" },
+			"to": { width: "100%" },
+		},
+		"blink-caret": {
+			"from, to": { borderColor: "transparent" },
+			"50%": { borderColor: "black" },
+		},
+		},
+		animation: {
+		"fade-in": "fade-in 1s ease-out forwards",
+		typing: "typing 2s steps(20) 1s forwards, blink-caret 0.75s step-end infinite",
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],
