@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <div className="">
+      <div className="pt-20 md:pt-24">
       <Hero />
       <Achievements />
       <Services />
@@ -20,6 +21,7 @@ export default function Home() {
       <WhyChooseUs />
       <Faq />
       <Transform />
+      </div>
     </div>
   );
 }
