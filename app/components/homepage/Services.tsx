@@ -5,7 +5,7 @@ import { BiCheck } from "react-icons/bi";
 export default function Services() {
   return (
     <section>
-        <div className="py-12 lg:py-16 gap-12 px-4 text-center">
+        <div id="services" className="py-12 lg:py-16 gap-12 px-4 text-center">
             <h1 className="text-4xl font-medium leading-relaxed"
             data-aos="fade-in-down"
             data-aos-duration="800"

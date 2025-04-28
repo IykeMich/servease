@@ -5,7 +5,7 @@ export default function HowServeWorks() {
   return (
     <section className="w-full">
         {/* <div className="bg-[#7e6363]"> */}
-        <div className="bg-[#f7f7f7] mb-12">
+        <div className="bg-[#f7f7f7] mb-12" id="howItWorks">
             <div className="py-12 lg:py-16 gap-12 text-center px-4">
                 <h1 className="text-4xl font-medium leading-relaxed"
                 data-aos="fade-in-down"

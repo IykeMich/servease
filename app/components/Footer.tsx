@@ -8,7 +8,7 @@ import { GoLocation } from "react-icons/go";
 
 export default function Footer() {
   return (
-    <section className="bg-[#161C2D] text-white">
+    <section id="footer" className="bg-[#161C2D] text-white">
       <div className="pt-16 px-4 md:px-8 lg:px-12 flex flex-col md:flex-row gap-12 justify-between">
         <div className="first-section flex w-full md:w-1/3">
             <div className="flex flex-col gap-4">
@@ -31,12 +31,12 @@ export default function Footer() {
             <div className="flex flex-col gap-4">
                 <h1 className="text-white text-xl font-bold">Company</h1>
                 <ul className="text-sm text-[#A6A6A6] cursor-pointer grid gap-1.5 md:gap-3">
-                    <Link href="hero">Home </Link>
-                    <Link href="services">Our Services</Link>
+                    <Link href="/">Home </Link>
+                    <Link href="#services">Our Services</Link>
                     <Link href="/">Projects</Link>
-                    <Link href="about">About Us</Link>
+                    <Link href="#about">About Us</Link>
                     <Link href="/">Blog</Link>
-                    <Link href="contact">Contact</Link>
+                    <Link href="#footer">Contact</Link>
                 </ul>
             </div>
             <div className="flex flex-col gap-4">
@@ -47,7 +47,7 @@ export default function Footer() {
                     <li>Shopping</li>
                     <li>Errand runs</li>
                     <li>Plumbing services</li>
-                    <Link href="services">Company services</Link>
+                    <Link href="#services">Company services</Link>
                 </ul>
             </div>
         </div>

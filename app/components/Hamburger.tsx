@@ -35,7 +35,7 @@ export default function Hamburger() {
 
                         <div className="button flex items-start w-[90%] mt-12">
                             <Button className='shadow-sm bg-sGreen text-white
-                            hover:bg-black hover:text-gray-500 hover:shadow-sGreen !px-2 !my-0 w-full'>
+                            hover:bg-black hover:text-gray-500 hover:shadow-sGreen !px-2 !my-0 w-full animate-pulse duration-[2000]'>
                                 <p className='font-medium text-base !p-0 lg:!p-4'>Download App</p>
                             </Button>
                         </div>

@@ -19,7 +19,7 @@ export default function Hero() {
             {/* <div className="absolute inset-0 md:hidden opacity-5 bg-[url('/assets/homepage/heroImage.svg')] bg-cover bg-center"></div> */}
             {/* <div className="absolute inset-0 md:hidden bg-black/30"></div>  */}
                 <div className="relative z-10">
-                    <div className="headings gap-6 pt-4 pb-12 md:pr-12 text-center md:text-start">
+                    <div className="headings gap-6 pt-4 pb-12 lg:pr-12 text-center md:text-start">
                         {/* <h1
                             className="font-outfit font-semibold text-5xl leading-snug lg:leading-normal pb-4 opacity-0 animate-fade-in"
                             data-aos="fade-in"
@@ -46,7 +46,6 @@ export default function Hero() {
                         </span>
                         </h1>
 
-
                         <p className="font-outfit font-medium text-sm tracking-wide
                         px-2.5 md:px-0"
                             data-aos="fade-up"
@@ -72,13 +71,15 @@ export default function Hero() {
                             </p>
                         </Button>
                     </div>
-                    <div className="Join py-8">
-                        <p className="flex space-x-1.5 items-center text-sm text-center md:text-start">
-                            {/* <span><GoPeople /></span> */}
-                            <span className="text-sGreen"><BsPeopleFill size={20} /></span>
-                            <span>Join 20,000+ happy, stress-free users already enjoying ServEase.</span>
-                        </p>
-                        <div className="mt-8 flex space-x-6 items-center justify-center md:justify-normal px-4 md:px-0">
+                    <div className="Join py-8 ">
+                        <div className="text-center md:text-start flex">
+                            <p className="flex md:space-x-1.5 items-start md:items-center text-sm">
+                                {/* <span><GoPeople /></span> */}
+                                <span className="text-sGreen"><BsPeopleFill size={20} /></span>
+                                <span>Join 20,000+ happy, stress-free users already enjoying ServEase.</span>
+                            </p>
+                        </div>
+                        <div className="mt-8 flex space-x-6 items-start md:items-center justify-center md:justify-start px-4 md:px-0">
                             {heroServices.map((service,index) => (
                                 <div key={index} className="">
                                     <div className="flex flex-col justify-center text-center items-center space-y-1">
@@ -95,7 +96,7 @@ export default function Hero() {
             <div className="heroSectionTwo w-full justify-center md:w-[40%] hidden md:flex items-center">
                 <div>
                     <Image src="/assets/homepage/heroImage.svg" alt="Servease" width={400} height={400} priority
-                    data-aos="zoom-in" data-aos-duration="1500" className="h-screen md:h-[50%] lg:h-screen"/>
+                    data-aos="zoom-in" data-aos-duration="1500" className="md:h-[70%] lg:h-screen"/>
                 </div>
             </div>
         </div>

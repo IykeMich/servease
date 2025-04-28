@@ -10,7 +10,7 @@ export default function Navbar() {
     {name: "Home", url: "/"},
     {name: "Services", url: "#services"},
     {name: "How it works", url: "#howItWorks"},
-    {name: "Contact us", url: "#contact"},
+    {name: "Contact us", url: "#footer"},
     {name: "For Providers", url: "#providers"},
   ];
 
@@ -26,7 +26,7 @@ export default function Navbar() {
             {/* NavLinks */}
             <div className="navLinks hidden md:flex gap-3 lg:gap-6 xl:gap-12">
                 {navLinks.map((nav, index) => (
-                    <Link key={index} href={nav.url.toLowerCase()}
+                    <Link key={index} href={nav.url}
                     className='font-outfit font-normal text-base lg:text-xl
                     hover:text-sGreen ease-in animate duration-100'>{nav.name}</Link>
                 ))}
