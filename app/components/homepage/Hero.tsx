@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section id="hero" className="">
       <main className="px-2 md:px-8 lg:px-12">
-        <div className="flex flex-col md:flex-row justify-beetween overflow-hidden">
+        <div className="flex flex-col md:flex-row justify-between overflow-hidden">
             <div className="heroSectionOne w-full md:w-[60%] px-3 md:px-0 relative">
             {/* <div className="absolute inset-0 md:hidden opacity-5 bg-[url('/assets/homepage/heroImage.svg')] bg-cover bg-center"></div> */}
             {/* <div className="absolute inset-0 md:hidden bg-black/30"></div>  */}

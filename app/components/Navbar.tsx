@@ -81,15 +81,24 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      window.addEventListener('scroll', controlNavbar);
-
-      return () => {
-        window.removeEventListener('scroll', controlNavbar);
-      };
-    }
+    const handleScroll = () => {
+      if (typeof window !== 'undefined') {
+        if (window.scrollY > lastScrollY) {
+          setShowNavbar(false);
+        } else {
+          setShowNavbar(true);
+        }
+        setLastScrollY(window.scrollY);
+      }
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+  
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
   }, [lastScrollY]);
-
+  
   return (
     <>
     <main className={`w-full bg-white z-50 mb-1 transition-transform duration-300 fixed top-0 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
