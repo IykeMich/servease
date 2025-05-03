@@ -20,7 +20,7 @@ export default function Services() {
             {services.map((service) => (
                 <div key={service.id} className={`${service.id === 2 || service.id === 4 ? "bg-sYellow2" : "bg-sGreen2"} 
                 ${service.id === 2 || service.id === 3 ? "text-sYellow" : "text-sGreen"} 
-                w-full ${`servide.id < 3 ? "md:w-1/3" : "md:w-1/2"}`}>
+                w-full ${servide.id < 3 ? "md:w-1/3" : "md:w-1/2"}`}>
                     <div className={`p-8 lg:px-16 gap-4`}>
                         <Image src={service.image} alt={service.title} width={50} height={50} className="w-12 h-12"/>
                         <h4 className={`font-outfit font-medium text-xl pt-4`}>{service.title} </h4>
