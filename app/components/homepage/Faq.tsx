@@ -6,12 +6,12 @@ import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const faqs: {question: string, answer: string}[] = [
-  { question: "How does ServEase work?", answer: "" },
-  { question: "Whay services do you offer?", answer: "" },
-  { question: "How are services providers vetted?", answer: "" },
-  { question: "What if I'm not satisfied with the service?", answer: "" },
-  { question: "Can I request the same provider for future services?", answer: "" },
-  { question: "How do I pay for services?", answer: "" },
+  { question: "How does ServEase work?", answer: "ServEase connects you with verified errand service providers who can carry out tasks like deliveries, grocery shopping, cleaning, and more. You simply select a service category, submit your request with instructions and an offer, and you'll receive bids from nearby providers. After selecting a provider, you can track the task in real time, chat with the provider in-app, and pay securely once the task is completed." },
+  { question: "Whay services do you offer?", answer: "We offer a wide range of errand services including package delivery, grocery shopping, house cleaning, bill payments, and other personal assistance tasks. You can also submit custom errand requests tailored to your specific needs." },
+  { question: "How are services providers vetted?", answer: "Every provider on ServEase undergoes a strict verification process, including ID submission and profile screening. Verified providers are awarded a badge so you can easily identify and trust who you're working with." },
+  { question: "What if I'm not satisfied with the service?", answer: "If you're unhappy with a service, you can report the issue directly through the app. ServEase has a built-in dispute resolution system, and your payment is held in escrow for 24 hours to allow time for proper mediation before it's released to the provider." },
+  { question: "Can I request the same provider for future services?", answer: "Yes. Once a provider completes your task satisfactorily, you can save their profile and choose them again for future errands—if they're available in your area." },
+  { question: "How do I pay for services?", answer: "Payments are made securely through the app using your preferred method—card, mobile money, or bank transfer. ServEase uses an escrow system, meaning your payment is held until the errand is successfully completed and confirmed by you." },
 ];
 
 export default function Faq() {
