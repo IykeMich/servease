@@ -16,9 +16,11 @@ export default function Services() {
             data-aos-once="true"            
             >We provide a range of high-quality home services to make your life easier and your home more enjoyable.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="flex flex-col md:flex-row md:flex-wrap md:gap-0">
             {services.map((service) => (
-                <div key={service.id} className={`${service.id === 2 || service.id === 4 ? "bg-sYellow2" : "bg-sGreen2"} ${service.id === 2 || service.id === 3 ? "text-sYellow" : "text-sGreen"} `}>
+                <div key={service.id} className={`${service.id === 2 || service.id === 4 ? "bg-sYellow2" : "bg-sGreen2"} 
+                ${service.id === 2 || service.id === 3 ? "text-sYellow" : "text-sGreen"} 
+                w-full ${`servide.id < 3 ? "md:w-1/3" : "md:w-1/2"}`}>
                     <div className={`p-8 lg:px-16 gap-4`}>
                         <Image src={service.image} alt={service.title} width={50} height={50} className="w-12 h-12"/>
                         <h4 className={`font-outfit font-medium text-xl pt-4`}>{service.title} </h4>
