@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="second-section flex flex-col md:flex-row justify-between gap-4 md:space-x-8">
             <div className="flex flex-col gap-4">
                 <h1 className="text-white text-xl font-bold">Company</h1>
-                <ul className="text-sm text-[#A6A6A6] cursor-pointer grid gap-1.5 md:gap-3">
+                <ul className="text-sm text-white cursor-pointer grid gap-1.5 md:gap-3">
                     <Link href="/">Home </Link>
                     <Link href="#services">Our Services</Link>
                     <Link href="/">Projects</Link>
@@ -41,7 +41,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col gap-4">
                 <h1 className="text-white text-xl font-bold">Services</h1>
-                <ul className="text-sm text-[#A6A6A6] cursor-pointer grid gap-1.5 md:gap-3">
+                <ul className="text-sm text-white cursor-pointer grid gap-1.5 md:gap-3">
                     <li>Registered cleaning</li>
                     <li>Delivery services</li>
                     <li>Shopping</li>

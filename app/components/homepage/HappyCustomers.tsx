@@ -5,13 +5,13 @@ export default function HappyCustomers() {
   return (
     <section id='customers' className='w-full overflow-hidden ashRadial'>
         <div className='px-4 md:px-8 lg:px-12 mb-12'>
-            <h1 className="text-4xl text-center font-medium leading-relaxed
+            <h1 className="text-3xl text-center font-medium leading-relaxed
             py-12 lg:py-16">
                 Our Happy Customers
             </h1>
-            <div className="customers-section flex flex-wrap flex-col md:flex-row justify-between gap-4">
+            <div className="customers-section flex flex-wrap flex-col md:flex-row justify-between gap-4 md:gap-0">
                 {customers.map((customer) => (
-                    <div key={customer.id} className="customer-card bg-white shadow-lg rounded-xl p-4 md:w-1/4 lg:w-1/5">
+                    <div key={customer.id} className="customer-card rounded-xl p-4 md:w-1/4 lg:w-1/5">
                         <div className="flex flex-col justify-center md:justify-start items-center md:items-start text-center md:text-start gap-1 lg:gap-3">
                             <Image src={customer.image} alt={customer.name} width={70} height={70} className="w-20 h-20 md:w-12 md:h-12 rounded-full"/>
                             <h4 className="font-outfit font-medium text-xl md:hidden block">{customer.name}</h4>

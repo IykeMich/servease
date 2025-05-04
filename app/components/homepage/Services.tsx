@@ -6,7 +6,7 @@ export default function Services() {
   return (
     <section>
         <div id="services" className="py-12 lg:py-16 gap-12 px-4 text-center">
-            <h1 className="text-4xl font-medium leading-relaxed"
+            <h1 className="text-3xl font-medium leading-relaxed"
             data-aos="fade-in-down"
             data-aos-duration="800"
             data-aos-once="true">Our Core Services</h1>

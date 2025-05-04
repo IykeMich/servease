@@ -15,7 +15,7 @@ export default function Hero() {
     <section id="hero" className="">
       <main className="px-2 md:px-8 lg:px-12">
         <div className="flex flex-col md:flex-row justify-between overflow-hidden">
-            <div className="heroSectionOne w-full md:w-[60%] px-3 md:px-0 relative">
+            <div className="heroSectionOne w-full md:w-[50%] px-3 md:px-0 relative">
             {/* <div className="absolute inset-0 md:hidden opacity-5 bg-[url('/assets/homepage/heroImage.svg')] bg-cover bg-center"></div> */}
             {/* <div className="absolute inset-0 md:hidden bg-black/30"></div>  */}
                 <div className="relative z-10">
@@ -93,10 +93,10 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className="heroSectionTwo w-full justify-center md:w-[40%] hidden md:flex items-center">
+            <div className="heroSectionTwo w-full justify-center md:w-[50%] hidden md:flex items-center">
                 <div>
                     <Image src="/assets/homepage/heroImage.svg" alt="Servease" width={400} height={400} priority
-                    data-aos="zoom-in" data-aos-duration="1500" className="md:h-[70%] lg:h-screen"/>
+                    data-aos="zoom-in" data-aos-duration="1500" className=" w-full md:h-[70vh] lg:h-screen"/>
                 </div>
             </div>
         </div>

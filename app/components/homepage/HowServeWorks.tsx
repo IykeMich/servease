@@ -7,7 +7,7 @@ export default function HowServeWorks() {
         {/* <div className="bg-[#7e6363]"> */}
         <div className="bg-[#f7f7f7] mb-12" id="howItWorks">
             <div className="py-12 lg:py-16 gap-12 text-center px-4">
-                <h1 className="text-4xl font-medium leading-relaxed"
+                <h1 className="text-3xl font-medium leading-relaxed"
                 data-aos="fade-in-down"
                 data-aos-duration="1000"
                 data-aos-offset="150"
@@ -21,23 +21,23 @@ export default function HowServeWorks() {
                               
                 >Getting a helping hand has never been easier. Our simple process connects you with reliable service providers in just a few steps.</p>
             </div>
-            <div className="flex flex-col justify-evenly gap-8 md:flex-row md:flex-wrap px-8 lg:px-12 pb-4">
+            <div className="flex flex-col justify-evenly gap-8 md:gap-2 md:flex-row md:flex-wrap px-8 lg:px-0 pb-4">
                 {guidelines.map((guideline) => (
-                    <div key={guideline.id} className="flex flex-col items-center justify-center gap-4 px-8 lg:px-8 py-8 bg-white shadow-lg rounded-xl
+                    <div key={guideline.id} className="flex flex-col items-center justify-center gap-4 px-8 lg:px-4 py-8 bg-white shadow-lg rounded-xl
                     border-t-4 border-sGreen md:w-1/4 lg:w-1/6"
                     data-aos="fade-up"
                     data-aos-delay={`${guideline.id * 100}`} // Stagger by 100ms per item
                     data-aos-duration="800"
                     data-aos-once="true">
                         <div className="rounded-lg flex flex-col items-center justify-center mt-4">
-                            <div className="rounded-lg w-full h-20 bg-sGreen2 relative items-center flex justify-center">
+                            <div className="rounded-lg w-full h-20 lg:h-18 bg-sGreen2 relative items-center flex justify-center">
                                 <div className="absolute bg-sGreen text-white items-center py-2 px-4 rounded-full -top-6">
                                 {guideline.id} 
                                 </div>
-                                <Image src={guideline.image} alt={guideline.title}  width={25} height={25} className="w-8 h-8"/>
+                                <Image src={guideline.image} alt={guideline.title}  width={10} height={10} className="w-8 h-6"/>
                             </div>
-                            <h4 className={`font-outfit pt-4`}>{guideline.title}</h4>
-                            <p className="text-sm text-black py-4 leading-normal">{guideline.description}</p>
+                            <h4 className={`font-outfit font-bold text-sm pt-4`}>{guideline.title}</h4>
+                            <p className="text-xs text-black py-4 leading-normal">{guideline.description}</p>
                         </div>
                     </div>
                 ))}

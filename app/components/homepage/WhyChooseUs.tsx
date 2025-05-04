@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
     <section>
         <div className="ashDiagonal">
             <div className="py-12 lg:py-16 gap-12 text-center px-4">
-                <h1 className="text-2xl md:text-4xl font-medium leading-relaxed"
+                <h1 className="text-2xl md:text-3xl font-medium leading-relaxed"
                 data-aos="fade-in-down"
                 data-aos-duration="1000"
                 data-aos-offset="150"
