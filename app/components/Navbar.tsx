@@ -101,26 +101,25 @@ export default function Navbar() {
   
   return (
     <>
-    <main className={`w-full bg-white z-50 mb-1 transition-transform duration-300 fixed top-0 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
-        <div className="flex items-center justify-between px-4 pt-2 md:px-8 xl:px-12">
+    <header className={`w-full bg-white z-50 transition-transform duration-300 fixed top-0 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
+        <div className="flex items-center justify-between px-4 pt-2 md:px-8 h-[50px]">
             {/* Logo */}
             <div className="Logo">
                <Link href="/"> 
-                 <Image className=' h-auto' src={logo} alt="Logo" width={150} height={50} />
+                 <Image className='w-[145px] h-[65px]' src={logo} alt="Logo" width={145} height={67} />
                </Link>
             </div>
 
-            {/* NavLinks */}
-            <div className="navLinks hidden md:flex gap-3 lg:gap-6 xl:gap-12">
-                {navLinks.map((nav, index) => (
-                    <Link key={index} href={nav.url}
-                    className='font-outfit font-normal text-base
-                    hover:text-sGreen ease-in animate duration-100'>{nav.name}</Link>
-                ))}
-            </div>
+            {/* <div className="flex items-center justify-end gap-8 w-full"> */}
+              <div className="navLinks hidden md:flex gap-3 md:gap-8 ">
+                  {navLinks.map((nav, index) => (
+                      <Link key={index} href={nav.url}
+                      className='font-outfit font-normal text-[15px]
+                      hover:text-sGreen ease-in animate duration-100'>{nav.name}</Link>
+                  ))}
+              </div>
 
-            {/* Login Button */}
-            <div className="button">
+              <div className="button">
                 <Button className='hidden md:flex shadow-sm bg-sGreen text-white
                 hover:bg-black hover:shadow-ccOrange !px-2 !my-0 animate-pulse duration-[2]'>
                     <p className='font-outfit font-medium !text-[8.6px] md:!text-sm !p-0 lg:!py-4 lg:!px-6'>
@@ -131,8 +130,11 @@ export default function Navbar() {
                     <Hamburger />
                 </div>
             </div>
+
+            {/* </div> */}
+
         </div>
-    </main>
+    </header>
     </>
   )
 }

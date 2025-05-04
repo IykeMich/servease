@@ -3,6 +3,7 @@ import Image from "next/image";
 import { BsApple, BsPeopleFill } from "react-icons/bs";
 import { FaGooglePlay } from "react-icons/fa";
 import HeroTypewriter from "../CustomComponents/HeroTypewriter";
+import Navbar from "../Navbar";
 
 export default function Hero() {
     const heroServices: {title: string; image:string}[] = [
@@ -96,7 +97,7 @@ export default function Hero() {
             <div className="heroSectionTwo w-full justify-center md:w-[50%] hidden md:flex items-center">
                 <div>
                     <Image src="/assets/homepage/heroImage.svg" alt="Servease" width={400} height={400} priority
-                    data-aos="zoom-in" data-aos-duration="1500" className=" w-full md:h-[70vh] lg:h-screen"/>
+                    data-aos="zoom-in" data-aos-duration="1500" className="w-[100vw] h-[90vh]"/>
                 </div>
             </div>
         </div>

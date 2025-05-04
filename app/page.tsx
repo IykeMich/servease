@@ -11,7 +11,7 @@ import Transform from "./components/homepage/Transform";
 export default function Home() {
   return (
     <div className="">
-      <div className="pt-20 md:pt-24">
+      <div className="pt-20 md:pt-16">
       <Hero />
       <Achievements />
       <Services />
